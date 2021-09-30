@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "A template to enable easily making proxy plugins.",
   "main": "index.js",
+  "private": true,
   "scripts": {
     "fix": "ts-standard --fix src",
     "start": "tsc && node lib"
