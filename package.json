@@ -4,7 +4,8 @@
   "description": "A template to enable easily making proxy plugins.",
   "main": "index.js",
   "scripts": {
-    "fix": "ts-standard --fix src"
+    "fix": "ts-standard --fix src",
+    "start": "tsc && node lib"
   },
   "keywords": [],
   "author": "",

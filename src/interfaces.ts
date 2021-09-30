@@ -18,13 +18,13 @@ export interface ExtendedPacketMeta extends PacketMeta {
 }
 
 async function run (data: any, meta: ExtendedPacketMeta, toClient: ServerClient, toServer: Client, modOptions: ModOptions): Promise<void> {}
-async function runOnce  (toClient: ServerClient, toServer: Client, modOptions: ModOptions): Promise<void> {}
+async function runOnce (toClient: ServerClient, toServer: Client, modOptions: ModOptions): Promise<void> {}
 
 export interface Module {
-    packets: {
-        [Bound.toClient]: string[]
-        [Bound.toServer]: string[]
-    },
-    run: typeof run,
-    runOnce: typeof runOnce
+  packets: {
+    [Bound.toClient]: string[]
+    [Bound.toServer]: string[]
+  }
+  run: typeof run
+  runOnce: typeof runOnce
 }
