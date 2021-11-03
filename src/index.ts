@@ -60,7 +60,7 @@ async function main (): Promise<void> {
 
   async function callModule (data: any, meta: ExtendedPacketMeta, toClient: ServerClient, toServer: Client, bound: Bound): Promise<void> {
     const modOptions = modOptionsStore.get(toServer.username)
-    if (modOptions !== undefined && modOptions.listenToChat === true) {
+    if (modOptions !== undefined && modOptions.isEnabled === true) {
       for (const module of modules) {
         if ((module.packets[bound]).includes(meta.name)) {
           await module.run(data, meta, toClient, toServer, modOptions)
