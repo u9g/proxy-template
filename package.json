@@ -12,11 +12,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/node": "^16.10.2",
     "minecraft-protocol": "^1.26.5",
     "mineflayer": "^3.11.2",
     "prismarine-proxy": "^1.0.0",
     "source-map-support": "^0.5.20",
     "ts-standard": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.6"
   }
 }
